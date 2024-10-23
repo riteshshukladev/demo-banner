@@ -15,14 +15,53 @@
         background-image: url("BG.png");
       }
       
-      
-
-      @media (min-width:1023px){
-        .desk_img {
-        width: 234px;
-        min-height: 213px;
-        max-height: 234px;
+      /* Default styles for text_and_button */
+      .text_and_button {
+        width: 75%;  /* Mobile default */
       }
+
+      /* Image styles */
+      .desk_img {
+        width: 100%;
+        height: auto;
+      }
+
+      /* Media Queries */
+      @media (min-width: 768px) {
+        .text_and_button {
+          width: 50%;  /* Medium screens */
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .desk_img {
+          width: auto;
+          min-width: 368px;
+          max-width: 368px;
+          min-height: 262px;
+          height: auto;
+        }
+        .text_and_button {
+          width: 25%;  /* Large screens */
+        }
+      }
+
+      @media (min-width: 1024px) and (max-width: 1128px) {
+        .text_and_button {
+          width: 15%;
+        }
+      }
+
+      @media (min-width: 1024px) and (max-width: 1096px) {
+        .text_and_button {
+          width: 10%;
+        }
+      }
+
+      @media (min-width: 1024px) and (max-width: 1042px) {
+        .text_and_button {
+          width: 9%;
+        }
       }
     </style>
   </head>
@@ -34,36 +73,35 @@
             src="Bike Right.png"
             width="234"
             height="212"
-            class="w-full lg:w-[27.5%]  lg:block desk_img"
+            class="desk_img lg:w-[27.5%]"
             loading="lazy"
             alt="ride image"
           >
           
-          <div class="font-onset flex flex-col items-center gap-[20px] w-[75%] md:w-[50%] lg:w-[25%]">
+          <div class="text_and_button font-onset flex flex-col items-center gap-[20px]">
             <h4 class="text-lg sm:text-2xl font-medium tracking-tight leading-[22.8px] sm:leading-[28.8px]">
               Start savings journey with Motovolt M7
             </h4>
             <button
-        href="#"
-        class="slide-button bg-[#323232] text-black
-        py-[12px] px-[20px] sm:py-[16px] sm:px-[25px] rounded-md no-underline flex items-center gap-2.5 text-sm sm:text-base leading-[20.4px] font-onset text-white hover:bg-opacity-80 whitespace-nowrap  text-size-override font-semibold tracking-tight opacity-85"
-      >
-        <img
-          src="red-dot.png"
-          width="7"
-          height="7"
-          class="max-h-4 mt-[2.5px]"
-          alt="red dot"
-        >
-        Book a Test Ride
-      </button>
+              class="slide-button bg-[#323232] text-black
+              py-[12px] px-[20px] sm:py-[16px] sm:px-[25px] rounded-md no-underline flex items-center gap-2.5 text-sm sm:text-base leading-[20.4px] font-onset text-white hover:bg-opacity-80 whitespace-nowrap text-size-override font-semibold tracking-tight opacity-85"
+            >
+              <img
+                src="red-dot.png"
+                width="7"
+                height="7"
+                class="max-h-4 mt-[2.5px]"
+                alt="red dot"
+              >
+              Book a Test Ride
+            </button>
           </div>
           
           <img
             src="Bike Left.png"
             width="234"
             height="212"
-            class="w-full lg:w-[27.5%]  lg:block desk_img"
+            class="desk_img lg:w-[27.5%]"
             loading="lazy"
             alt="ride image"
           >
