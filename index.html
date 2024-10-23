@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .main-cont {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        background-image: url("BG.png");
+      }
+      
+      .desk_img {
+        width: 234px;
+        min-height: 213px;
+        max-height: 234px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w-full flex justify-center">
+      <div class="w-full mt-5 max-w-[1440px] px-[50px]">
+        <div class="main-cont w-full flex flex-col lg:flex-row items-center justify-between rounded-xl gap-12 lg:gap-14 text-center overflow-hidden">
+          <img
+            src="Bike Right.png"
+            width="234"
+            height="212"
+            class="w-full lg:w-[27.5%]  lg:block desk_img"
+            loading="lazy"
+            alt="ride image"
+          >
+          
+          <div class="font-onset flex flex-col items-center gap-[20px] w-[75%] md:w-[50%] lg:w-[25%]">
+            <h4 class="text-lg sm:text-2xl font-medium tracking-tight leading-[22.8px] sm:leading-[28.8px]">
+              Start savings journey with Motovolt M7
+            </h4>
+            <button
+        href="#"
+        class="slide-button bg-[#323232] text-black
+        py-[12px] px-[20px] sm:py-[16px] sm:px-[25px] rounded-md no-underline flex items-center gap-2.5 text-sm sm:text-base leading-[20.4px] font-onset text-white hover:bg-opacity-80 whitespace-nowrap  text-size-override font-semibold tracking-tight opacity-85"
+      >
+        <img
+          src="red-dot.png"
+          width="7"
+          height="7"
+          class="max-h-4 mt-[4px]"
+          alt="red dot"
+        >
+        Book a Test Ride
+      </button>
+          </div>
+          
+          <img
+            src="Bike Left.png"
+            width="234"
+            height="212"
+            class="w-full lg:w-[27.5%]  lg:block desk_img"
+            loading="lazy"
+            alt="ride image"
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
